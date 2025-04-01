@@ -43,7 +43,12 @@ You can run the analysis tasks either locally or using Docker.
    docker-compose up -d
    ```
 
-2. **Run Your PySpark Scripts Using `spark-submit`**:
+2. **Generate the python file**:
+   ```bash
+   python data_generator.py
+   ```
+
+3. **Run Your PySpark Scripts Using `spark-submit`**:
 Once you perform all the three tasks, run the following:
    ```bash
    spark-submit task1.py
@@ -51,10 +56,10 @@ Once you perform all the three tasks, run the following:
    spark-submit task3.py
    ```
 
-3. **Verify the Outputs**:
+4. **Verify the Outputs**:
    On your host machine, check the `output/` directory for the resulting files.
 
-4. **Stop the Spark Cluster**:
+5. **Stop the Spark Cluster**:
    ```bash
    docker-compose down
    ```
