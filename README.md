@@ -45,9 +45,9 @@ You can run the analysis tasks either locally or using Docker.
 
 2. **Run Your PySpark Scripts Using `spark-submit`**:
    ```bash
-   spark-submit src/task1.py
-   spark-submit src/task2.py
-   spark-submit src/task3.py
+   spark-submit task1.py
+   spark-submit task2.py
+   spark-submit task3.py
    ```
 
 3. **Verify the Outputs**:
